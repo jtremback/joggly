@@ -1,0 +1,64 @@
+---
+layout: "default"
+---
+
+.topbar
+	i.icon-long-arrow-left.pull-left
+	._title.text-center.center
+		|Joggly
+	i.icon-reorder.pull-right
+
+.meter
+	.img
+	._primary
+		|8.8
+		span mi
+	.stat-block
+		._title 
+			|CALORIES:
+		._display
+			i.icon-food 
+			|760
+
+	.stat-block
+		._title
+			|TIME:
+		._display
+			i.icon-time
+			|1:06
+
+	._goalbar
+		._bar
+		._title 
+			i.icon-trophy
+			|2.2
+			span mi
+
+.pace
+	._graph
+		._line(style="height:72%;left:0;")
+		._line(style="height:82%;left:10%;")
+		._line(style="height:92%;left:20%;")
+		._line(style="height:65%;left:30%;")
+		._line(style="height:92%;left:40%;")
+
+		._line(style="height:62%;left:50%;")
+		._line(style="height:85%;left:60%;")
+		._line(style="height:67%;left:70%;")
+		._line(style="height:89%;left:80%;")
+		._line.-active(style="height:83%;left:90%;")
+	.stat-block
+		._title
+			|PACE:
+		._display
+			i.icon-time
+			|6:43
+
+.bottombar
+	button.selectbutton
+		|Fo̱s Display: Music
+		select(name='select')
+			option Pace
+			option(selected='selected') Music
+			option Miles run
+			option Miles to goal
